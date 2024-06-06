@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 80%;
+    height: 80%;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#leaderboard-list {
+    padding-left: 0;
+    text-align: left;
+}
+
+#leaderboard-list li:nth-child(1) {
+    color: #FFD700; /* Gold for first place */
+}
+
+#leaderboard-list li:nth-child(2) {
+    color: #C0C0C0; /* Silver for second place */
+}
+
+#leaderboard-list li:nth-child(3) {
+    color: #CD7F32; /* Bronze for third place */
+}
+
